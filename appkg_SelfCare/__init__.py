@@ -9,6 +9,7 @@ moment = Moment()
 
 
 # Application factory: create_app initialization
+# This code can be called several times later on-demand
 def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(config[config_name])
