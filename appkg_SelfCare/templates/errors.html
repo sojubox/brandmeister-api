@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BM REST API</title>
+    <link href="../static/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
+    {{ moment.include_jquery() }}
+    {{ moment.include_moment() }}
+</head>
+<body>
+<div align="left"><img src="../static/brandmeister.png" border="0"></div>
+<h2>Error {{ errorNumber }}</h2>
+<h3>RESTful API server endpoint</h3>
+<p>The error found has the following timestamp: <i>{{ moment(currentTime).format('YYYY/MM/DD @ HH:mm:ss') }} CEST</i>. </p>
+<p>&nbsp;</p>
+<p><b><i>The BrandMeister Development Team</i></b></p>
+</body>
+</html>
