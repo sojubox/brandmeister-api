@@ -2,13 +2,13 @@ from flask import Flask, render_template
 from datetime import datetime
 from flask.ext.moment import Moment
 from config import config
-from appkg_SelfCare import api_1_0, main
+from appkg_SelfCare import main, api_1_0
 
 # Moment initialization
 moment = Moment()
 
 
-# create_app initialization
+# Application factory: create_app initialization
 def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(config[config_name])
@@ -26,7 +26,6 @@ def create_app(config_name):
     @app.route('/apidocs/')
     def apidocs():
         return render_template('apidocs.html')
-
 
     @app.errorhandler(404)
     def page_not_found(e):
