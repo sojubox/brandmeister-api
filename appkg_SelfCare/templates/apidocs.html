@@ -1,42 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BrandMeister RESTful API docs</title>
-    <link href="../static/styles.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
-</head>
-<body>
-<div align="left"><img src="../static/brandmeister.png" border="0"></div>
-<h2>RESTful API server endpoint documentation (<i>&quot;the API docs&quot;</i>)</h2>
-<p>This API is RESTful. That means this API follows six basic design patterns or rules:</p>
-<ol>
-    <li><b>Client-Server</b>:
-        <br>They are really separated layers. Client's behavior is only to consume resources from this Server.
-    </li>
+{% extends "base.html" %}
+
+{% block head %}
+    {% block title %}
+        <title>BM RESTful API docs</title>
+    {% endblock %}
+    <link href="{{ url_for('static', filename='styles/styles.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='images/favicon.ico')}}" rel="icon" type="image/x-icon">
+{% endblock %}
+
+{% block body %}
+    class="operation-ok">
+    <div align="left">
+        <img src="{{ url_for('static', filename='images/brandmeister.png')}}" border="0">
+        <ul id="breadcrumb">
+            <li><a href="{{ url_for('index') }}" title="Home">
+                <img src="{{ url_for('static', filename='images/home.png')}}" alt="Home" class="home" /></a>
+            </li>
+        <li>API Docs</li>
+        </ul>
+    </div>
+
+    <h1>RESTful API server documentation (<i>&quot;the API docs&quot;</i>)</h1>
+
+    <h2>General description</h2>
+    <p>This API is RESTful. That means this API follows six basic design patterns or rules:</p>
+    <ol>
+        <li><b>Client-Server</b>:
+            <br>They are really separated layers. Client's behavior is only to consume resources from this Server.
+        </li>
         <br>
-    <li><b>Stateless</b>:
-        <br>Each Client's request must contain all information required by the Server to carry out
-        a proper response. In other words: the Server won't store Client's information from one request to the next.
-    </li>
+        <li><b>Stateless</b>:
+            <br>Each Client's request must contain all information required by the Server to carry out
+            a proper response. In other words: the Server won't store Client's information from one request to the next.
+        </li>
         <br>
-    <li><b>Cacheable</b>:
+        <li><b>Cacheable</b>:
         <br>Server will indicate the Client if something is cacheable or not.
-    </li>
+        </li>
         <br>
-    <li><b>Layered System</b>:
+        <li><b>Layered System</b>:
         <br>RESTful API design allows intermediaries to operate among Clients and Server.
-    </li>
+        </li>
         <br>
-    <li><b>Uniform interface</b>:
+        <li><b>Uniform interface</b>:
         <br>This RESTful API uses a standard and uniform method for Client-to-Server communication.
-    </li>
+        </li>
         <br>
-    <li><b>Code-on-Demand</b>:
+        <li><b>Code-on-Demand</b>:
         <br>Server might provide executable code or scripts for Clients to execute in their context.
-    </li>
-</ol>
-<p>&nbsp;</p>
-<p><b><i>The BrandMeister Development Team</i></b></p>
-</body>
-</html>
+        </li>
+    </ol>
+
+    <h2>Authentication mechanism</h2>
+    <p>To be defined</p>
+
+    <h2>Available web services</h2>
+    <p>To be defined</p>
+
+    <h2>Methods and functionalities provided</h2>
+    <p>To be defined</p>
+
+{% endblock %}
+
+{% block footer %}
+    <hr size="1" noshade>
+    <p><b><span class="copy-left">&copy;</span><i>The BrandMeister Development Team</i></b></p>
+{% endblock %}

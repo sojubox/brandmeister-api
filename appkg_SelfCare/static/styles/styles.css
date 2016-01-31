@@ -1,0 +1,90 @@
+/*
+=======================================================================================================================
+
+ Simple CSS design for the BrandMeister RESTful API
+ 2016, by EA1HET (ea1het@ea1het.com)
+
+=======================================================================================================================
+*/
+
+/* SIMPLE HTML FORMAT */
+h1, h2, h3, p, ul, ol, li, a {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+body {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+COLORIZE PAGE BACKGROUND IN DEPENDENCE OF OPERATIONAL RESULT
+*/
+.operation-ko {
+    background-color: #FBEFF2;
+}
+
+.operation-ok {
+    background-color: #EFFBF5;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+SETS COPYLEFT LICENSE ICON
+*/
+.copy-left {
+    display: inline-block;
+    text-align: right;
+    margin: 0px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /*noinspection CssInvalidPropertyValue*/
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+CONFIGURE FORMAT FOR BREADCRUMBS
+*/
+#breadcrumb {
+    font: 11px 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    background-image:url('../images/background.png');
+    background-repeat:repeat-x;
+    height:30px;
+    line-height:30px;
+    color:#9b9b9b;
+    border:solid 1px #cacaca;
+    width:100%;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+
+#breadcrumb li {
+    list-style-type:none;
+    float:left;
+    padding-left:10px;
+}
+
+#breadcrumb a {
+    height:30px;
+    display:block;
+    background-image:url('../images/separator.png');
+    background-repeat:no-repeat;
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+    color:#454545;
+}
+
+.home {
+    border: none;
+    margin: 8px 0px;
+}
+
+#breadcrumb a:hover {
+    color: #FF0000;
+}

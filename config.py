@@ -9,6 +9,7 @@ class Config:
     APP_DIR = os.path.abspath(os.path.realpath(__file__))
     STATIC_DIR = os.path.join(APP_DIR, 'static')
     IMAGES_DIR = os.path.join(STATIC_DIR, 'images')
+    STYLES_DIR = os.path.join(STATIC_DIR, 'styles')
 
     # Method with an application instance (for now just a bypass)
     @staticmethod
