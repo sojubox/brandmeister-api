@@ -1,2 +1,2 @@
-# Database models for the APP will come here when required
+# Database models for this package will come here as required
 
