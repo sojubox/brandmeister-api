@@ -4,6 +4,7 @@ from flask.ext.moment import Moment
 from config import config
 from appkg_SelfCare import main, api_1_0
 
+
 # Moment initialization
 moment = Moment()
 

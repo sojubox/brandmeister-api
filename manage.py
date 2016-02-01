@@ -13,5 +13,6 @@ manager.add_command("runserver", Server(host="0.0.0.0", port=5000))
 
 # Finally, we launch the application using the manager instance. Here we control the running parameters like the
 # address we are going to bind, TCP port to be used and many other features.
+
 if __name__ == '__main__':
     manager.run()
