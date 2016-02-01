@@ -31,7 +31,7 @@ The main repository for all BranMeister code is placed [here, on GitHub](https:/
 ### This repository's content
 This is the personal repository of [EA1HET](http://www.ea1het.com) (Jonathan), who, into the BrandMeister's Development Team, is working on backend and RESTful API services. 
 
-This repository holds master and develop branches from the RESTful API services. **This repository should not be treated as a reliable source of code**. Instead you should be using [the main respository](https:/github.com/brandmeister/). 
+This repository holds master and develop branches from the RESTful API services. **This repository should not be treated as a reliable source of code**. Instead you should be using [the main repository](https://github.com/brandmeister/).
 
 ---
 
