@@ -39,6 +39,7 @@ This repository holds master and develop branches from the RESTful API services.
 
  * [Python](http://www.python.org/) programming language.
  * [Flask](http://flask.pocoo.org/), a Python micro-framework.
+ * [Flask-SocketIO](https://flask-socketio.readthedocs.org/), a low latency bi-directional communications library.
  * [stackedit.io](https://stackedit.io/editor) for Markdown parsing and text processing.
  * A lot of coffee & patience :)
 
