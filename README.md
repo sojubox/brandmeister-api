@@ -11,7 +11,7 @@ The project was conceived upon the basis of **DMR** radio networking plus a set 
 BrandMeister project's success relies on collaboration, thus the existence of this and other related repositories of Open Source code. By the time being, global main features of this project are:
 
  * Basic ETSI-like DMR functionality adapted to ham radio service (that means basically the network is 100% operational and vendor-independent).
- * Complete voice functionality (two Time Slots, many Talk Groups routers and addressed, at the time, among countries).
+ * Complete voice functionality (two Time Slots [TS], many Talk Groups [TG] routed and addressed, at the time, among countries woldwide).
  * Basic short messaging inter/intra Time Slot functionality.
  * (partial) Support for D-Star (by means of inter-platform gateways)
  * (uncompleted) Support for 100% terminal independence.
