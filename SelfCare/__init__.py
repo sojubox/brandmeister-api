@@ -1,17 +1,17 @@
 ###################################################################################################################
 #
-# S E L F C A R E   M A I N   P A C K A G E
+# S E L F C A R E   P A C K A G E
 #
 # THIS IS THE PACKAGE CONSTRUCTOR
 #
 ###################################################################################################################
 
+from SelfCare.config import config
 from flask import Flask, render_template
+from flask.ext.bcrypt import Bcrypt
 from flask.ext.moment import Moment
 from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.bcrypt import Bcrypt
-from config import config
-
+from datetime import datetime
 
 # Definition of elements to be used into the app that is going to be launched
 moment = Moment()
@@ -44,7 +44,7 @@ def create_app(config_name):
     #
     ###################################################################################################################
 
-    # attach routes and custom error pages here
+    # Attach routes and custom error pages here
     @app.route('/')
     def index():
         return render_template('index.html')
@@ -53,6 +53,15 @@ def create_app(config_name):
     def apidocs():
         return render_template('apidocs.html')
 
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return render_template('errors.html', currentTime=datetime.utcnow(),
+                               errorNumber=e, errorLiteral='Not Found'), 404
+
+    @app.errorhandler(500)
+    def internal_server_error(e):
+        return render_template('errors.html', currentTime=datetime.utcnow(),
+                              errorNumber=e, errorLiteral='Internal Server Error'), 500
 
     ###################################################################################################################
     #
