@@ -2,16 +2,16 @@
 # RESTful API code repository
 
 ### About the project
- [BrandMeister](http://brandmeister.network) is an Open Source ham radio project whose aim is the creation of a free bundle of  network infrastrucures and services.
+ [BrandMeister](http://brandmeister.network) is an Open Source ham radio project whose aim is the creation of a free bundle of  network infrastructures and services.
 
 The project was conceived upon the basis of **DMR** radio networking plus a set of computer services that expands radio service over IP networking.
 
 > **[DMR](http://www.dmrassociation.org) (Digital Mobile Radio)** is an [ETSI specification](http://dmrassociation.org/the-dmr-standard/) for professional mobile radio (PMR) that's being actively adapted to the ham radio service by ham radio operators worldwide. 
 
-BrandMeister project's success relies on collaboration, thus the existance of this and other related repositories of Open Source code. By the time being, global main features of this project are:
+BrandMeister project's success relies on collaboration, thus the existence of this and other related repositories of Open Source code. By the time being, global main features of this project are:
 
  * Basic ETSI-like DMR functionality adapted to ham radio service (that means basically the network is 100% operational and vendor-independent).
- * Complete voice funcionality (two Time Slots, many Talk Groups routerd and addressed, at the time, among countries).
+ * Complete voice functionality (two Time Slots, many Talk Groups routers and addressed, at the time, among countries).
  * Basic short messaging inter/intra Time Slot functionality.
  * (partial) Support for D-Star (by means of inter-platform gateways)
  * (uncompleted) Support for 100% terminal independence.
