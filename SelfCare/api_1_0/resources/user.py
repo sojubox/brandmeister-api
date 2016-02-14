@@ -24,11 +24,11 @@ parser = reqparse.RequestParser()
 parser.add_argument('task')
 
 
-class User(Resource):
+class Users(Resource):
 
     def get(self, user):
         abort_if_user_doesnt_exist(user)
-        return USERS[user]
+        return USERS[user], 200
 
     def delete(self, user):
         abort_if_user_doesnt_exist(user)

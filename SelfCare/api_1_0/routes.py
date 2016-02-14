@@ -6,6 +6,6 @@
 #
 ###################################################################################################################
 from . import api_version
-from .resources.users import User
+from .resources.user import Users
 
-api_version.add_resource(User, '/user/<string:user>')
+api_version.add_resource(Users, '/users/<string:user>')
