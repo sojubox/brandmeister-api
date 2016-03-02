@@ -39,7 +39,7 @@ def new_callsign():
 @api.route('/callsigns/<string:callsign>', methods=['PUT'])
 @json
 def edit_callsign(callsign):
-    callsign = Callsign.query.get_or_404(id)
+    callsign = Callsign.query.get_or_404(callsign)
     callsign.import_data(request.get_json(force=True))
     db.session.add(callsign)
     db.session.commit()
