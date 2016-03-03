@@ -34,9 +34,10 @@ class Callsign(db.Model):
 
     def import_data(self, data):
         try:
+            self.callsign = data['callsign']
             self.name = data['name']
         except KeyError as e:
-            raise ValidationError('Invalid student: missing ' + e.args[0])
+            raise ValidationError('Invalid callsign: missing ' + e.args[0])
         return self
 
 

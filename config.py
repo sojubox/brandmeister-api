@@ -11,7 +11,7 @@ import redis
 class Config:
     # General variables
     APP_DIR = path.abspath(path.dirname(__file__))
-    # Related to API security
+    # Related to API security and Tokens
     USE_TOKEN_AUTH = True
 
     # Enable rate limits only if redis is running
