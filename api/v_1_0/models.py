@@ -37,7 +37,7 @@ class Callsign(db.Model):
             self.callsign = data['callsign']
             self.name = data['name']
         except KeyError as e:
-            raise ValidationError('Invalid callsign: missing ' + e.args[0])
+            raise ValidationError('Invalid callsign or name: missing ' + e.args[0])
         return self
 
 
